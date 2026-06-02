@@ -1,0 +1,25 @@
+.homepage {
+  & .hero {
+    height: 100vh;
+    background-color: orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10%;
+    color: #fff;
+
+    h1 {
+      font-size: clamp(1rem, 10vw, 5rem);
+      font-weight: bold;
+    }
+
+    h3 {
+      font-weight: 100;
+    }
+
+    p {
+      font-weight: 100;
+    }
+  }
+}

@@ -4,7 +4,7 @@ import "./homepage.styles.scss";
 import { ShopPage } from "../shoppage/shoppage.component";
 import { AboutPage } from "../aboutpage/aboutpage.component";
 import { PageNotFound } from "../404page/404page.component";
-import { Button } from "../../components/button/button.component";
+import heroImg from "../../assets/hero.png";
 
 export const HomePage = () => (
   <div className="homepage">
@@ -17,10 +17,15 @@ export const HomePage = () => (
           Quality. Best Prices. Fast Delivery.
         </p>
         <div className="btns">
-          <button>Shop Now</button>
-          <button>Expolre Deals</button>
+          <Link className="btn primary" to={"/shop"}>
+            Shop Now
+          </Link>
+          <Link className="btn secondary" to={"/shop"}>
+            Explore Deals
+          </Link>
         </div>
       </div>
+      <img className="hero-image" src={heroImg} alt="hero image" />
     </div>
   </div>
 );

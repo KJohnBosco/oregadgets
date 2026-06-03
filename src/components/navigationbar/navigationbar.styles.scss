@@ -1,6 +1,6 @@
 nav {
   position: absolute;
-  background-color: hsl(16, 100%, 50%, 80%);
+  background-color: hsla(0, 0%, 100%, 0.08);
   width: 100%;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -9,7 +9,7 @@ nav {
   align-items: center;
   min-height: 50px;
   padding: 0 10px;
-  color: #fff;
+  color: #05000e;
 
   .logo {
     width: 15vw;
@@ -20,7 +20,7 @@ nav {
 
     & .link {
       padding: 0 10px;
-      color: #fff;
+      color: #05000e;
       font-size: clamp(0.8rem, 6vw, 1.3rem);
       text-decoration: none;
     }

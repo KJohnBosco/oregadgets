@@ -2,13 +2,26 @@
   padding: 0.5rem 1.2rem;
   border-radius: 20px;
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 2px solid #ff4501;
+  text-decoration: none;
   border-top-width: 5px;
   font-weight: 100;
   font-family: "Black Ops One";
-  color: #fff;
+  box-shadow: 2px 2px 3px #05000e30;
+  cursor: pointer;
+
+  &.primary {
+    background-color: #ff4501;
+    color: #fff;
+  }
+
+  &.secondary {
+    background-color: transparent;
+    color: #05000e;
+  }
 
   &:hover {
-    border-color: #fff;
+    filter: brightness(130%);
+    box-shadow: 2px 2px 5px #05000e50;
   }
 }

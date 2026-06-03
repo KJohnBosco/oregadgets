@@ -1,12 +1,48 @@
 .homepage {
   & .hero {
     height: 100vh;
-    background-color: #fff;
+    background: linear-gradient(
+      to top left,
+      #ffa60090,
+      transparent,
+      transparent
+    );
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 10%;
     color: #05000e;
+    padding: 0 25px;
+
+    & > * {
+      width: 50%;
+    }
+
+    .content {
+      text-align: left;
+
+      & h2,
+      h3 {
+        font-size: clamp(1rem, 10vw, 3.5rem);
+      }
+
+      h3 {
+        color: orangered;
+        padding-bottom: 1rem;
+      }
+
+      p {
+        padding-bottom: 1rem;
+      }
+
+      .btns {
+        display: flex;
+        justify-content: space-between;
+
+        Link {
+          color: #fff;
+        }
+      }
+    }
   }
 }

@@ -1,5 +1,6 @@
 nav {
-  position: absolute;
+  position: fixed;
+  top: 0;
   background-color: hsla(0, 0%, 100%, 0.08);
   width: 100%;
   backdrop-filter: blur(10px);
@@ -12,7 +13,7 @@ nav {
   color: #05000e;
 
   .logo {
-    width: 15vw;
+    width: 10vw;
   }
 
   .links {

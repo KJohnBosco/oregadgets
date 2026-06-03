@@ -3,7 +3,7 @@
     height: 100vh;
     background: linear-gradient(
       to top left,
-      #ffa60090,
+      #ff000050,
       transparent,
       transparent
     );
@@ -19,7 +19,30 @@
     }
 
     .content {
+      padding: 10px 25px;
       text-align: left;
+
+      .welcome {
+        background-color: #05000e;
+        width: fit-content;
+        color: #fff;
+        height: 50px;
+        margin-bottom: 2rem;
+        padding: 10px 15px 10px 0;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        font-size: clamp(0.6rem, 6vw, 1rem);
+
+        span {
+          display: inline-block;
+          background-color: #ff4501;
+          padding: 10px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border-bottom-left-radius: 30px;
+        }
+      }
 
       & h2,
       h3 {
@@ -37,12 +60,17 @@
 
       .btns {
         display: flex;
-        justify-content: space-between;
+        gap: 5px;
 
         Link {
           color: #fff;
+          margin-right: 1rem;
         }
       }
+    }
+
+    .hero-image {
+      width: 40%;
     }
   }
 }

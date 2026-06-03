@@ -10,6 +10,9 @@ export const HomePage = () => (
   <div className="homepage">
     <div className="hero">
       <div className="content">
+        <span className="welcome">
+          <span>Welcome To</span> ORE GADGETS
+        </span>
         <h2>Quality Gadgets.</h2>
         <h3>Better Life.</h3>
         <p>

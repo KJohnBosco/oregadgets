@@ -9,28 +9,18 @@ import { Button } from "../../components/button/button.component";
 export const HomePage = () => (
   <div className="homepage">
     <div className="hero">
-      <h1>
-        <span>ORE</span> Gadgets
-      </h1>
-      <p>Quality Gadget Distributor</p>
-      <h3>Buy & Enjoy The New Feeling</h3>
-
-      <div className="btns">
-        <Link className="btn" to={"/about"} style={{ background: "blue" }}>
-          About
-        </Link>
-        <Link className="btn" to={"/shop"} style={{ background: "orangered" }}>
-          Shop
-        </Link>
+      <div className="content">
+        <h2>Quality Gadgets.</h2>
+        <h3>Better Life.</h3>
+        <p>
+          Discover the latest smartphones, accessories, audio & more. Premium
+          Quality. Best Prices. Fast Delivery.
+        </p>
+        <div className="btns">
+          <button>Shop Now</button>
+          <button>Expolre Deals</button>
+        </div>
       </div>
-
-      <Routes>
-        <Route path={"/shop"} element={<ShopPage />} />
-        <Route path={"/about"} element={<AboutPage />} />
-        <Route path={"*"} element={<PageNotFound />} />
-      </Routes>
     </div>
   </div>
 );
-
-// export default Homepage;

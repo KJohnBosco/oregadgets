@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navigationbar.styles.scss";
+import logo from "../../assets/logo.png";
 
 export const NavBar = () => (
   <>
     <nav>
-      <img className="logo" src="#" alt="ore logo" />
+      <img className="logo" src={logo} alt="ore logo" />
       <div className="links">
         <Link className="link" to={"/"}>
           Home

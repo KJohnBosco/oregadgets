@@ -6,9 +6,33 @@ nav {
   -webkit-backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  padding: 0 10px;
+  color: #fff;
 
-  .link {
-    color: #fff;
-    text-decoration: none;
+  .logo {
+    width: 15vw;
+  }
+
+  .links {
+    display: flex;
+
+    & .link {
+      padding: 0 10px;
+      color: #fff;
+      font-size: clamp(0.8rem, 6vw, 1.3rem);
+      text-decoration: none;
+    }
+
+    .icons {
+      background-color: blue;
+
+      i {
+        width: 30px;
+        height: 30px;
+        border-color: black;
+      }
+    }
   }
 }

@@ -30,5 +30,35 @@ export const HomePage = () => (
       </div>
       <img className="hero-image" src={heroImg} alt="hero image" />
     </div>
+    <div className="service-group">
+      <div className="card">
+        <i className="fa-solid fa-truck"></i>
+        <div className="info">
+          <h3>Free Delivery</h3>
+          <p>On orders above UGX.300,000</p>
+        </div>
+      </div>
+      <div className="card">
+        <i className="fa-solid fa-truck"></i>
+        <div className="info">
+          <h3>Secure Payment</h3>
+          <p>100% secure payments</p>
+        </div>
+      </div>
+      <div className="card">
+        <i className="fa-solid fa-truck"></i>
+        <div className="info">
+          <h3>Easy Returns</h3>
+          <p>7-day return policy</p>
+        </div>
+      </div>
+      <div className="card">
+        <i className="fa-solid fa-truck"></i>
+        <div className="info">
+          <h3>24/7 Support</h3>
+          <p>We are here to help</p>
+        </div>
+      </div>
+    </div>
   </div>
 );

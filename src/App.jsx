@@ -7,6 +7,7 @@ import { CartPage } from "./pages/cartpage/cartpage.component";
 import { AboutPage } from "./pages/aboutpage/aboutpage.component";
 import { PageNotFound } from "./pages/404page/404page.component";
 import "./App.scss";
+import { Footer } from "./components/footer/footer.component";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      <Footer />
     </>
   );
 }

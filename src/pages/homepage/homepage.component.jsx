@@ -109,5 +109,40 @@ export const HomePage = () => (
         <button>Subscribe</button>
       </form>
     </div>
+
+    {/* Why Choose Section */}
+    <div>
+      <h1>Why Choose Ore Gadgets?</h1>
+      <div className="service-group">
+        <div className="card">
+          <i className="fa-solid fa-truck"></i>
+          <div className="info">
+            <h3>Genuine Products</h3>
+            <p>100% authentic products</p>
+          </div>
+        </div>
+        <div className="card">
+          <i className="fa-solid fa-truck"></i>
+          <div className="info">
+            <h3>Affordable Prices</h3>
+            <p>Best prices in the market</p>
+          </div>
+        </div>
+        <div className="card">
+          <i className="fa-solid fa-truck"></i>
+          <div className="info">
+            <h3>Fast Delivery</h3>
+            <p>Over & reliable delivery</p>
+          </div>
+        </div>
+        <div className="card">
+          <i className="fa-solid fa-truck"></i>
+          <div className="info">
+            <h3>Trusted By Thousands</h3>
+            <p>Join thousands of our customers</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );

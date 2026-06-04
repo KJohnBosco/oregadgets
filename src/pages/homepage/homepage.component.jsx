@@ -96,5 +96,18 @@ export const HomePage = () => (
         )}
       </Collection>
     </div>
+
+    {/* Subscriptions */}
+    <div className="subscription-card">
+      <h1>Join Ore Gadget Community</h1>
+      <p>
+        Get exclusive deals, new arrivals & special offers delivered to your
+        door.
+      </p>
+      <form className="form" action="">
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </form>
+    </div>
   </div>
 );

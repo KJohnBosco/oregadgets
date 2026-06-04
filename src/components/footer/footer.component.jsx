@@ -21,41 +21,81 @@ export const Footer = () => (
         <div className="link-group">
           <h3>Shop</h3>
           <ul>
-            <Link className="link">Smartphones</Link>
-            <Link className="link">Audio</Link>
-            <Link className="link">Accessories</Link>
-            <Link className="link">Smart Watches</Link>
-            <Link className="link">Laptops</Link>
-            <Link className="link">Others</Link>
+            <Link className="link" to={"/shop"}>
+              Smartphones
+            </Link>
+            <Link className="link" to={"/shop"}>
+              Audio
+            </Link>
+            <Link className="link" to={"/shop"}>
+              Accessories
+            </Link>
+            <Link className="link" to={"/shop"}>
+              Smart Watches
+            </Link>
+            <Link className="link" to={"/shop"}>
+              Laptops
+            </Link>
+            <Link className="link" to={"/shop"}>
+              Others
+            </Link>
           </ul>
         </div>
         <div className="link-group">
           <h3>Company</h3>
           <ul>
-            <Link className="link">About Us</Link>
-            <Link className="link">Contact Us</Link>
-            <Link className="link">FAQ</Link>
-            <Link className="link">Shipping & Returns</Link>
-            <Link className="link">Terms & Conditions</Link>
-            <Link className="link">Privacy Policy</Link>
+            <Link className="link" to={"/about"}>
+              About Us
+            </Link>
+            <Link className="link" to={"/contact"}>
+              Contact Us
+            </Link>
+            <Link className="link" to={"/faq"}>
+              FAQ
+            </Link>
+            <Link className="link" to={"/about"}>
+              Shipping & Returns
+            </Link>
+            <Link className="link" to={"/terms&conditions"}>
+              Terms & Conditions
+            </Link>
+            <Link className="link" to={"/privacypolicy"}>
+              Privacy Policy
+            </Link>
           </ul>
         </div>
         <div className="link-group">
           <h3>Help</h3>
           <ul>
-            <Link className="link">My Account</Link>
-            <Link className="link">Track Order</Link>
-            <Link className="link">Returns</Link>
-            <Link className="link">Payment Options</Link>
-            <Link className="link">Support Center</Link>
+            <Link className="link" to={"/account"}>
+              My Account
+            </Link>
+            <Link className="link" to={"/order"}>
+              Track Order
+            </Link>
+            <Link className="link" to={"/order"}>
+              Returns
+            </Link>
+            <Link className="link" to={"/account"}>
+              Payment Options
+            </Link>
+            <Link className="link" to={"/contact"}>
+              Support Center
+            </Link>
           </ul>
         </div>
         <div className="link-group">
           <h3>Contact</h3>
           <div className="contacts">
-            <Link className="link">+256 700 000 000</Link>
-            <Link className="link">info@oregadgets.com</Link>
-            <Link className="link">Kampala, Uganda</Link>
+            <Link className="link" to={"tel:+256700000000"}>
+              +256 700 000 000
+            </Link>
+            <Link className="link" to={"mailto:info@oregadgets.com"}>
+              info@oregadgets.com
+            </Link>
+            <Link className="link" target="blank" to="https://maps.google.com">
+              Kampala, Uganda
+            </Link>
           </div>
         </div>
       </div>

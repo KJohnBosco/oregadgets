@@ -1,4 +1,4 @@
-export const product = [
+export const Products = [
   {
     category: "Smartphones",
     items: [

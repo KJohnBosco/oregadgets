@@ -5,9 +5,13 @@ import { ShopPage } from "../shoppage/shoppage.component";
 import { AboutPage } from "../aboutpage/aboutpage.component";
 import { PageNotFound } from "../404page/404page.component";
 import heroImg from "../../assets/hero.png";
+import { Collection } from "../../components/collection/collection.component";
+import { CollectionItem } from "../../components/collection-item/collection-item.component";
+import { Products } from "../../Products";
 
 export const HomePage = () => (
   <div className="homepage">
+    {/* Hero Section */}
     <div className="hero">
       <div className="content">
         <span className="welcome">
@@ -30,6 +34,8 @@ export const HomePage = () => (
       </div>
       <img className="hero-image" src={heroImg} alt="hero image" />
     </div>
+
+    {/* Service Group */}
     <div className="service-group">
       <div className="card">
         <i className="fa-solid fa-truck"></i>
@@ -59,6 +65,36 @@ export const HomePage = () => (
           <p>We are here to help</p>
         </div>
       </div>
+    </div>
+
+    {/* Collections */}
+    <div>
+      {/* Shop By Category */}
+      <Collection title={"Shop By Category"} name="Categories">
+        {Products.map((ctgry, index) => (
+          <CollectionItem
+            key={index}
+            category={ctgry.category}
+            imageurl={"#"}
+          />
+        ))}
+      </Collection>
+
+      {/* Best Selling Products */}
+      <Collection title={"Best Selling Products"} name={"Products"}>
+        {Products[0].items.map((item, index) =>
+          index < 10 ? (
+            <CollectionItem
+              key={index}
+              category={item.title}
+              imageurl={item.imageurl}
+              normalPrice={item.normalPrice}
+              discountPrice={item.discountPrice}
+              rating={item.rating}
+            />
+          ) : null,
+        )}
+      </Collection>
     </div>
   </div>
 );

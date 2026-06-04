@@ -1,0 +1,40 @@
+.collection-item {
+  min-width: 150px;
+  min-height: 180px;
+  text-align: left;
+  cursor: pointer;
+
+  .image {
+    width: 100%;
+    height: 150px;
+    background-color: #d4d4d450;
+    box-shadow: inset 3px 3px 5px #d4d4d490;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+
+    & img {
+      width: 70%;
+      height: 70%;
+    }
+
+    &:hover img {
+      transform: scale(1.2);
+      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    }
+  }
+
+  & .cost {
+    color: #ff4501;
+    font-weight: bold;
+  }
+
+  & .normal {
+    text-decoration-line: line-through;
+    font-size: smaller;
+    opacity: 50%;
+  }
+}

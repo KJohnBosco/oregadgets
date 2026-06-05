@@ -40,28 +40,28 @@ export const HomePage = () => (
       <div className="card">
         <i className="fa-solid fa-truck"></i>
         <div className="info">
-          <h3>Free Delivery</h3>
+          <p className="title">Free Delivery</p>
           <p>On orders above UGX.300,000</p>
         </div>
       </div>
       <div className="card">
         <i className="fa-solid fa-truck"></i>
         <div className="info">
-          <h3>Secure Payment</h3>
+          <p className="title">Secure Payment</p>
           <p>100% secure payments</p>
         </div>
       </div>
       <div className="card">
         <i className="fa-solid fa-truck"></i>
         <div className="info">
-          <h3>Easy Returns</h3>
+          <p className="title">Easy Returns</p>
           <p>7-day return policy</p>
         </div>
       </div>
       <div className="card">
         <i className="fa-solid fa-truck"></i>
         <div className="info">
-          <h3>24/7 Support</h3>
+          <p className="title">24/7 Support</p>
           <p>We are here to help</p>
         </div>
       </div>
@@ -112,33 +112,33 @@ export const HomePage = () => (
 
     {/* Why Choose Section */}
     <div>
-      <h1>Why Choose Ore Gadgets?</h1>
+      <h1 className="section-header">Why Choose Ore Gadgets?</h1>
       <div className="service-group">
         <div className="card">
           <i className="fa-solid fa-truck"></i>
           <div className="info">
-            <h3>Genuine Products</h3>
+            <p className="title">Genuine Products</p>
             <p>100% authentic products</p>
           </div>
         </div>
         <div className="card">
           <i className="fa-solid fa-truck"></i>
           <div className="info">
-            <h3>Affordable Prices</h3>
+            <p className="title">Affordable Prices</p>
             <p>Best prices in the market</p>
           </div>
         </div>
         <div className="card">
           <i className="fa-solid fa-truck"></i>
           <div className="info">
-            <h3>Fast Delivery</h3>
+            <p className="title">Fast Delivery</p>
             <p>Over & reliable delivery</p>
           </div>
         </div>
         <div className="card">
           <i className="fa-solid fa-truck"></i>
           <div className="info">
-            <h3>Trusted By Thousands</h3>
+            <p className="title">Trusted By Thousands</p>
             <p>Join thousands of our customers</p>
           </div>
         </div>

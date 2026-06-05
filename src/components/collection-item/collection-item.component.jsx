@@ -12,7 +12,7 @@ export const CollectionItem = ({
     <div className="image">
       <img src={imageurl} alt={`${category} image`} />
     </div>
-    <h3>{category}</h3>
+    <p className="name">{category}</p>
     {normalPrice ? (
       <>
         <p className="cost">UGX.{discountPrice}</p>

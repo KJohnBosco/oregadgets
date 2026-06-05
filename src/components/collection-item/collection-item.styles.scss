@@ -27,6 +27,11 @@
     }
   }
 
+  & .name {
+    // font-size: small;
+    font-weight: bold;
+  }
+
   & .cost {
     color: #ff4501;
     font-weight: bold;

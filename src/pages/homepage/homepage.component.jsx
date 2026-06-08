@@ -93,7 +93,8 @@ export class HomePage extends React.Component {
           <Collection
             title={"Best Selling Products"}
             name={"Products"}
-            products={this.state.products}
+            products={this.state.products[0].items}
+            limit={8}
           />
         </div>
 

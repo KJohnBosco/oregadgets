@@ -1,6 +1,7 @@
 import React from "react";
 import "./shoppage.styles.scss";
 import { Products } from "../../Products";
+import { Collection } from "../../components/collection/collection.component";
 
 export class ShopPage extends React.Component {
   constructor(props) {
@@ -14,8 +15,7 @@ export class ShopPage extends React.Component {
   render() {
     return (
       <div className="shoppage">
-        <h1>Shop Page</h1>
-        <h3>Welcome to Ore Store</h3>
+        <div className="products-container">{}</div>
       </div>
     );
   }

@@ -16,11 +16,13 @@ export class ShopPage extends React.Component {
     return (
       <div className="shoppage">
         <div className="products-container">
-          {this.state.products.map((category) => (
+          {this.state.products.map((category, index) => (
             <Collection
+              key={index}
               title={category.category}
               products={category.items}
               limit={10}
+              route={`${category.category.toLowerCase()}`}
             />
           ))}
         </div>

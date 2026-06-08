@@ -8,6 +8,7 @@ import { AboutPage } from "./pages/aboutpage/aboutpage.component";
 import { PageNotFound } from "./pages/404page/404page.component";
 import "./App.scss";
 import { Footer } from "./components/footer/footer.component";
+import { CategoryPage } from "./pages/categorypage/categorypage.component";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<PageNotFound />} />
+        <Route path="/shop/:categoryName" element={<CategoryPage />} />
       </Routes>
       <Footer />
     </>

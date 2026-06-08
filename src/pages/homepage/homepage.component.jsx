@@ -87,6 +87,7 @@ export class HomePage extends React.Component {
             title={"Shop By Category"}
             name="Categories"
             products={this.state.products}
+            route={"shop"}
           />
 
           {/* Best Selling Products */}
@@ -95,6 +96,7 @@ export class HomePage extends React.Component {
             name={"Products"}
             products={this.state.products[0].items}
             limit={8}
+            route={"shop"}
           />
         </div>
 

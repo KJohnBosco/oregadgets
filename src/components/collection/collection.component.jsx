@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import "./collection.styles.scss";
 import { CollectionItem } from "../collection-item/collection-item.component";
 
-export const Collection = ({ title, name, products, limit }) => (
+export const Collection = ({ title, name, products, limit, route }) => (
   <div className="collection">
     <div className="header">
       <h2 className="cltnTitle">{title}</h2>
-      <Link className="link" to={"/shop"}>
+      <Link className="link" to={route || title.toLowerCase()}>
         View All {name || title} &rarr;
       </Link>
     </div>

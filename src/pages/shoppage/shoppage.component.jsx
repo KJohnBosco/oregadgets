@@ -17,7 +17,11 @@ export class ShopPage extends React.Component {
       <div className="shoppage">
         <div className="products-container">
           {this.state.products.map((category) => (
-            <Collection title={category.category} products={category.items} />
+            <Collection
+              title={category.category}
+              products={category.items}
+              limit={10}
+            />
           ))}
         </div>
       </div>

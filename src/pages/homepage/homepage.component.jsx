@@ -4,15 +4,19 @@ import "./homepage.styles.scss";
 import { ShopPage } from "../shoppage/shoppage.component";
 import { AboutPage } from "../aboutpage/aboutpage.component";
 import { PageNotFound } from "../404page/404page.component";
-import heroImg from "../../assets/hero.png";
 import { Collection } from "../../components/collection/collection.component";
 import { CollectionItem } from "../../components/collection-item/collection-item.component";
 import { Products } from "../../Products";
+import bgimage from "../../assets/backgrounds/bg3.jpg";
+import heroImg from "../../assets/hero.png";
 
 export const HomePage = () => (
   <div className="homepage">
     {/* Hero Section */}
     <div className="hero">
+      <div className="bgImage">
+        <img src={bgimage} alt="background image" />
+      </div>
       <div className="content">
         <span className="welcome">
           <span>Welcome To</span> ORE GADGETS

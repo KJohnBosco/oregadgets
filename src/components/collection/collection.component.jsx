@@ -8,7 +8,7 @@ export const Collection = ({ title, name, products, limit }) => (
     <div className="header">
       <h2 className="cltnTitle">{title}</h2>
       <Link className="link" to={"/shop"}>
-        View All {name} &rarr;
+        View All {name || title} &rarr;
       </Link>
     </div>
     <div className="items">

@@ -22,7 +22,6 @@ export class ShopPage extends React.Component {
               title={category.category}
               products={category.items}
               limit={10}
-              route={`${category.category.toLowerCase()}`}
             />
           ))}
         </div>
